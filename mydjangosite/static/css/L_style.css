@@ -1,0 +1,101 @@
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .container {
+        position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: url("../images/python1.jpg") no-repeat center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .main_page{
+            color: #fff;
+            background: #161502a1;
+            margin-left: 70px;
+            margin-top: -90px;
+            padding: 50px 25px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 4px solid #105e04;
+        }
+
+        .get_start{
+            color: #106e04;
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: 2px;
+            padding: 20px 35px;
+            border-radius: 30px;
+            border: 2px solid green;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .get_start a {
+        color: #106e04;
+        }
+
+        .get_start:hover a{
+            color: #ccee0ee6;
+        }
+
+        .get_start:hover{
+            color: rgba(255, 255, 255, 0.812);
+            background: #106e04;
+        }
+
+        .team_num{
+            font-size: 20px;
+            margin-bottom:15px;
+        }
+
+        .title{
+            margin-bottom:20px;
+            font-size: 60px
+        }
+
+        .description {
+            font-size: 24px;
+            margin-bottom:10px;
+        }
+
+        .question{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .login{
+        font-weight:700;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+
+        .login:hover{
+            color: #ccee0ee6
+        }
+        .logos{
+            position:absolute;
+            bottom: 30px;
+            right: 50px;
+            align-self: flex-end;
+            background: #ffffffb0;
+            padding: 10px;
+            gap:20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logos img{
+            height: 20px;
+        }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Q_style.css' %}"/>
+
+</head>
+
+<body style="font-size: 15px">
+    <nav class="nav">
+        <p style="color: #fff;">
+            PyTonic
+        </p>
+        <ul class="navbar">
+            <li>Score: {{request.session.score}}</li>
+            <li>{{request.user}}</li>
+            <li><a href="{% url 'logout' %}" style="color:#fff; font-size:23px">Logout</a></li>
+        </ul>
+    </nav>
+    <p>{{main}}</p>
+     <div style="margin: auto;
+  width: 60%;
+  height: auto;
+  border: 3px outset #73AD21;
+  border-radius: 7px;
+  margin-top>: 80px;
+  padding: 250px 0px">
+    <form method='post' action='' class="center">
+        {% csrf_token %}
+        <div class="form-group">
+            <h1>
+            <label for="gridRadios1">{{question.question}}</label>
+            </h1>
+        </div>
+        <br>
+        <br>
+        <div class="form-check">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="{{question.question}}" id="gridRadios1" value="option1" checked="1">
+                <label class="form-check-label" for="gridRadios1">
+                    {{question.op1}}
+                </label>
+            </div>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="{{question.question}}" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                    {{question.op2}}
+                </label>
+            </div>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="{{question.question}}" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                    {{question.op3}}
+                </label>
+            </div>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="{{question.question}}" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                    {{question.op4}}
+                </label>
+            </div>
+            <br>
+        </div>
+        <input id='timer' type='hidden' name="timer" value="">
+        <br>
+        <div style="text-align:center">
+            <button id="sb1" type="submit" class="btn  btn-success btn-lg" onclick="question()" style="font-size:18px; background:#4D9201; color: #fff; cursor:pointer; border:none; padding:10px 20px; border-radius: 7px">Submit</button>
+        </div>
+    </form>
+     </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/H_style.css' %}"/>
+
+</head>
+
+<body style="font-size: 18px">
+    <nav class="nav">
+        <p>
+            <a href="{% url 'welcome' %}" style="color:#fff;">PyTonic</a>
+        </p>
+        <ul class="navbar">
+            <li>Hello {{request.user}}</li>
+            <li><a href="{% url 'logout' %}" style="color:#fff; font-size:23px">Logout</a></li>
+        </ul>
+    </nav>
+ <div class="container ">
+    <br>
+     <br>
+     <br>
+    <H1 align="center"> Accept The Challenge!</H1>
+     <br>
+    <style> H1{
+            color:#4D9201;
+            font-size:50px;
+            }
+        </style>
+        <br>
+        <br>
+      <h4 align="center"> 1. There is a list containing 50 questions, and four answers are shown each
+          <br >time for your selection. Only one is the correct.</h4>
+        <br>
+      <h4 align="center"> 2. If you select the correct one, you will pass to the next question.
+          <br > If you fail, you'll lose the game and will be able to start over.</h4>
+        <br>
+     <style> h4{
+            font-size:25px;
+            }
+    </style>
+ </div>
+    <br>
+    <div style="text-align:center">
+        <a href="/question/1">
+            <button type="button" class="btn  btn-success btn-lg"  style="font-size:18px; background:#4D9201;
+            color: #fff; cursor:pointer; border:none; padding:10px 20px; border-radius: 7px">Start</button></a>
+    </div>
+</body>
+</html>

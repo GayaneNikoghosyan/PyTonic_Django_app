@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/L_style.css' %}"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_page">
+            <h1 class="title">Welcome to PyTonic</h1>
+            <p class="description">Online Quiz Game</p>
+            <p class="team_num">By Team 1</p>
+            <button class="get_start"><a href="/login">Let's get started</a></button>
+            <p class="question">Still don't have an account?</p>
+           <p>Register  <a href="/register" class="login">here</a></p>
+        </div>
+        <div class="logos">
+            <img src="https://quickstart.am/wp-content/uploads/2022/11/women-coders-logo.png" height="30px" align="right">
+            <img src="https://agbu.org/sites/default/files/logo.png" height="30px" align="right">
+            <img src="https://quickstart.am/wp-content/uploads/2021/01/QS-logo-dark.png" height="30px" align="right">
+        </div>
+    </div>
+</body>
+</html>

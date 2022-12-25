@@ -1,0 +1,32 @@
+{% extends "myapp/base.html" %}
+
+{% block title %} Login Here {% endblock %}
+{% load crispy_forms_tags %}
+
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+{% block content %}
+    <form method="post" class="from-group">
+	{% csrf_token %}
+	{{form|crispy}}
+        <div class="input_section">
+           <label class="input username">
+            <span>Username...</span>
+            <div><input type="text" name="username" maxlength="150"></div>
+        </label>
+         <label class="input password">
+            <span>Password...</span>
+           <div><input type="password" name="password" maxlength="150"></div>
+           {% for message in messages %}
+                <div class="alert alert-info">{{message}}</div>
+           {% endfor %}
+        </label>
+        </div>
+	<button type="submit" class="btn btn-success">Login</button>
+	<p>Don't have an account? Create one <a href="/register">here</a></p>
+    </form>
+{% endblock %}
+

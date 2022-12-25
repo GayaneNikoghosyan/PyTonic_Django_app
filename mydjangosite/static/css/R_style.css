@@ -1,0 +1,116 @@
+*   {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    }
+body{
+width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background: url("../images/python_result") no-repeat center;
+}
+.container {
+
+            display: flex;
+            font-size: 20px;
+
+    }
+.nav {
+    padding: 18px 65px;
+    background:#4D9201;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: #fff;
+    }
+    .card-body {
+        margin: auto;
+        margin-bottom: 10px;
+        max-width: 70%;
+<!--  padding: 10px;-->
+    }
+    .card-title, .card-text{
+        margin: 16px 0px;
+    }
+    .card-body form {
+        margin: auto;
+        width: 113px;
+    }
+    .card-body form button {
+        font-size: 20px;
+        font-weight: bold;
+<!--        background: #ffffff;-->
+<!--        opacity: 0.7;-->
+        text-color: #73AD21;
+        cursor: pointer;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    button:hover{
+            color: rgba(255, 255, 255);
+            background: #4e6c04;
+    }
+    .card-columns {
+        display: block;
+        margin-left: auto;
+        margin-right: 50px;
+        margin-top: 40px;
+        width: 25%;
+        height: 45%;
+        border: 5px outset #73AD21;
+        border-radius: 7px;
+        padding: 8px;
+        color: rgba(255, 255, 255);
+<!--        height: 350px;-->
+    }
+    .card {
+        margin: auto;
+        padding: 9.5px;
+            background: #4D9201;
+        opacity: 0.65;
+    }
+    .container card-columns card {
+<!--        border-style: ;-->
+<!--        border: 2px white solid;-->
+<!--        border-radius: 5px;-->
+    }
+
+    @media screen and (max-width: 1320px) {
+  .card-body{
+        max-width: 100%;
+        padding-left: 25px;
+
+
+  }
+}
+   @media screen and (max-width: 1070px) {
+  .card-columns{
+        width: 30%;
+  }
+  .card-body{
+        padding-left: 10px;
+}
+}
+ @media screen and (max-width: 830px) {
+  .card-columns{
+        width: 40%;
+  }
+  }
+ @media screen and (max-width: 620px) {
+  .card-columns{
+        width: 45%;
+        font-size: 18px;
+  }
+  .nav{
+  padding: 18px 20px;
+  }
+  }

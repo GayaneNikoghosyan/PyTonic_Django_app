@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/L_style.css' %}"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main_page">
+            <h1 class="title">Welcome to PyTonic</h1>
+            <p class="description">Are you ready {{request.user}} ?</p>
+            <button class="get_start"><a href="{% url 'home' %}">Let's get started</a></button>
+            <br>
+           <p><a href="{% url 'logout' %}" class="login">log out</a></p>
+        </div>
+    </div>
+</body>
+</html>

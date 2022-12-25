@@ -1,0 +1,31 @@
+    * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    }
+
+    .nav {
+    padding: 18px 65px;
+    background:#4D9201;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: #fff;
+    }
+
+    .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

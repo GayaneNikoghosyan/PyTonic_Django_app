@@ -1,0 +1,51 @@
+id,question,op1,op2,op3,op4,ans
+1,Which is a valid variable name in Python?,1_data,old-data,prince_in_$,_output,option4
+2,"Assuming the app_costs variable is initialized with zero, which of the following is an incorrect assignment statement in Python?",app_costs = app_costs + 6.99,app_costs + 6.99 = app_costs,app_costs += 6.99,None of the above,option2
+3,"Suppose my_list is [3, 6, 12, 24, 5, 10, 15, 20]. Which of the statements returns the following list [6, 24, 10, 20]?",print(my_list[1:8]),print(my_list[::2]),print(my_list[1::2]),print(my_list[-1:-7:-2]),option3
+4,What value is returned by a function that doesn't have a return statement?,None,0,1,FALSE,option1
+5,What is the correct syntax to define a function in Python?,create myFunc():,define myFunc():,def myFunc():,function myFunc():,option3
+6,A function that is defined in a class is called a . . . ?,method,function,module,nested class,option1
+7,Which option refers to the bundling of data with the methods that operate on that data?,Encapsulation,Polymorphism,Abstraction,Inheritance,option1
+8,Which dictionary's method returns a default value for non-existent keys without an error?,get(),fromkeys(),setdefault(),popitem(),option1
+9,"Which of the following statements returns `[1, 9, 25, 49, 81]`?","list(map(lambda x: x**2, filter(lambda x: x % 2 != 0, range(10))))","list(map(lambda x: x % 2 != 0, filter(lambda x: x**2, range(10))))","list(filter(lambda x: x % 2 != 0, map(lambdax: x**2, range(10))))",a and c,option4
+10,Select the correct option regarding the file access modes in Python.,"`rb+` opens a file for both reading and writing in binary format. Overwrites the existing file if the file exists. If the file does not exist, it creates a new file for reading and writing.","'wb+` opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the file does not exist, it creates a new file for reading and writing.",`rb+` opens a file for fast reading in binary format.,None of the above,option2
+11,What is the data type of print(type(0xFF))?,number,hexint,hex,int,option4
+12,"In Python 3, what is the output of type(range(5))? What data type it will return?",int,"list(map(lambda x: x % 2 != 0, filter(lambda x: x**2, range(10))))",range,None of the above,option3
+13,Python is an,"interpreted, high-level, general-purpose programming language",object-oriented programming language,"procedural, functional, structured, and reflective programming language",All the above,option4
+14,Python is designed by,Guido van Rossum,James Gosling,Dennis Ritchie,Google,option1
+15,How can we generate random numbers in python using methods?,random.uniform(),random.randint(),random.random(),All of the above,option4
+16,"What is a correct syntax to output ""Hello World"" in Python?","p(""Hello World"")","echo(""Hello World"");","print(""Hello World"")","echp ""Hello World""",option3
+17,How do you insert COMMENTS in Python code?,/*This is a comment*/,#This is a comment,//This is a comment,This is a comment,option2
+18,Which one is NOT a legal variable name?,Myvar,_myvar,my-var,my_var,option3
+19,What is the correct file extension for Python files?,.pyth,.pyt,.pt,.py,option4
+20,What is the correct syntax to output the type of a variable or object in Python?,print(typeof x),print(type(x)),print(typeof(x)),print(typeOf(x)),option2
+21,Which method can be used to remove any whitespace from both the beginning and the end of a string?,strip(),trim(),ptrim(),len(),option1
+22,Which method can be used to return a string in upper case letters?,uppercase(),upperCase(),toUpperCase(),upper(),option4
+23,Which method can be used to replace parts of a string?,replace(),replaceString(),repl(),switch(),option1
+24,Which operator is used to multiply numbers?,x,#,%,*,option4
+25,Which of these collections defines a LIST?,"(""apple"", ""banana"", ""cherry"")","{""name"": ""apple"", ""color"": ""green""}","{""apple"", ""banana"", ""cherry""}","[""apple"", ""banana"", ""cherry""]",option4
+26,Which of these collections defines a TUPLE?,"(""apple"", ""banana"", ""cherry"")","{""name"": ""apple"", ""color"": ""green""}","{""apple"", ""banana"", ""cherry""}","[""apple"", ""banana"", ""cherry""]",option1
+27,Which of these collections defines a SET?,"(""apple"", ""banana"", ""cherry"")","{""name"": ""apple"", ""color"": ""green""}","{""apple"", ""banana"", ""cherry""}","[""apple"", ""banana"", ""cherry""]",option3
+28,"Which collection is ordered, changeable, and allows duplicate members?",SET,TUPLE,list,DICTIONARY,option3
+29,How do you start writing a while loop in Python?,x > y while {,while x > y:,while x > y {,while ( x > y),option2
+30,Which statement is used to stop a loop?,break,return,stop,exit,option1
+31,"What is used to define a block of code (body of loop, function etc.) in Python?",Curly braces,Parenthesis,Indentation,Quotation,option3
+32,What is the maximum length of a Python identifier?,32,16,128,No fixed length is specified.,option4
+33,Which of the following concepts is not a part of Python?,Pointers.,Loops.,Dynamic Typing.,All of the above.,option1
+34,Which of the following statements are used in Exception Handling in Python?,try,except,finally,All of the above,option4
+35,Which of the following types of loops are not supported in Python?,for,while,do-while,None of the above,option3
+36,"As what datatype are the *args stored, when passed into a function?",List.,Tuple.,Dictionary.,None of the above.,option2
+37,"As what datatype are the *kwargs stored, when passed into a function?",Lists.,Tuples.,Dictionary.,None of the above.,option3
+38,Which of the following blocks will always be executed whether an exception is encountered or not in a program?,try,except,finally,None of These,option3
+39,What keyword is used in Python to raise exceptions?,raise,try,goto,except,option1
+40,Which of the following are valid escape sequences in Python?,\n,\t,\\,All of the above,option4
+41,Which of the following are valid string manipulation functions in Python?,count(),upper(),strip(),All of the above,option4
+42,Which of the following modules need to be imported to handle date time computations in Python?,datetime,date,time,timedate,option1
+43,How can assertions be disabled in Python?,Passing -O when running Python.,Assertions are disabled by default.,Both A and B are wrong.,Assertions cannot be disabled in Python.,option1
+44,In which language is Python written?,C++,C,Java,None of these,option2
+45,What will be the result of the following expression in Python “2 ** 3 + 5 ** 2”?,65536,33,169,None of these,option2
+46,Python is used for,web development (server-side) and software development,mathematics and system scripting,Both of the above,None of the above,option3
+47,"In order to store values in terms of key and value pair, what type of core datatype we need?",class,list,tuple,dictionary,option4
+48,Polymorphism is when a subclass can modify the behavior of its superclass.,FALSE,TRUE,Depends on the contents of the class,This is an invalid question,option2
+49,How will you not create a dictionary?,"d = {'milk': 50, 'celery': 40}","d = dict(milk=50, celery=40)","d = dict([ ('milk', 50), ('celery', 40) ])","d = { ('milk', 50), ('celery', 40) }",option4
+50,What is the value of round(12.5) – round(11.5)?,0,1,2,3,option1

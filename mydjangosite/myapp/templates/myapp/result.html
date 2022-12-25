@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/R_style.css' %}"/>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <p style="color: #fff;"> PyTonic </p>
+            <ul class="navbar">
+                <li>{{request.user}} </li>
+                <li> <a href="{% url 'logout' %}" style="color:#fff; font-size:23px"> Logout </a></li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class="card-columns">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Score: {{score}}</h2>
+                    <p class="card-text">Percentage: {{percent}}%</p>
+                    <p class="card-text">{{average}} </p>
+                    <p class="card-text">Total questions: 50</p>
+                    <p class="card-text" style="margin-bottom: 20px;"> <b> All the best for next quiz!</b> </p>
+                    <form action="http://127.0.0.1:8000/welcome">
+                        <button> Try Again </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% endblock %}
