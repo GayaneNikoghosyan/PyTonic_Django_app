@@ -2,7 +2,7 @@
 #### PyTonic is WEB BASED Quiz Game, with a list of questions and 4 answers which are shown each time for user to select.
 #### Only one option is correct. If player selects the correct option, he's passing to next question, if player fail, 
 #### he loose the game and need to start over.
-##### 1. This is the landing page of PyTonic ![](c:/Users/user/Pictures/1.JPG)
+##### 1. This is the landing page of PyTonic ![](1.JPG)
 ##### 2. The login page will open if click on "let's get started" button ![](c:/Users/user/Pictures/2.JPG)
 ##### 3. Also, there is a registration page, for those users who didn't register yet. ![](C:\Users\user\Pictures/3.JPG)
 ##### 4. The welcome page opens when user loge in ![](C:\Users\user\Pictures/4.JPG)
