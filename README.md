@@ -1,4 +1,4 @@
-    ###### #Python   #Django   #Sqlite3   #OnlineQuizGame
+    ###### #quizapp #Python   #Django   #Sqlite3   #OnlineQuizGame
 #### PyTonic is WEB BASED Quiz Game, with a list of questions and 4 answers which are shown each time for user to select.
 #### Only one option is correct. If player selects the correct option, he's passing to next question, if player fail, 
 #### he loose the game and need to start over.
